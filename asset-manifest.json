@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ATT-ST-Antoine/static/css/main.32e65b04.css",
+    "main.js": "/ATT-ST-Antoine/static/js/main.7178331a.js",
+    "static/media/jeune.png": "/ATT-ST-Antoine/static/media/jeune.defc3089c4d1299eecde.png",
+    "static/media/D4.jpg": "/ATT-ST-Antoine/static/media/D4.74983fa07baec08d3cf8.jpg",
+    "static/media/D2.jpg": "/ATT-ST-Antoine/static/media/D2.97c0eef8ade74e748e05.jpg",
+    "static/media/logo.png": "/ATT-ST-Antoine/static/media/logo.8322f3ff80fe1c71bdd1.png",
+    "index.html": "/ATT-ST-Antoine/index.html",
+    "main.32e65b04.css.map": "/ATT-ST-Antoine/static/css/main.32e65b04.css.map",
+    "main.7178331a.js.map": "/ATT-ST-Antoine/static/js/main.7178331a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32e65b04.css",
+    "static/js/main.7178331a.js"
+  ]
+}
