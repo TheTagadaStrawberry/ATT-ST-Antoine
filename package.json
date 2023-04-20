@@ -1,7 +1,7 @@
 {
   "name": "att-st-antoine-static",
   "version": "0.1.0",
-  "homepage": "https://TheTagadaStrawberry.github.io/",
+  "homepage": "https://TheTagadaStrawberry.github.io/ATT-ST-Antoine",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
