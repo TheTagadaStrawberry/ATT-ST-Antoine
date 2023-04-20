@@ -1,0 +1,17 @@
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  height:100vh;
+  background-color:  #ddd;
+  background-image:  linear-gradient(
+    rgba(255, 255, 255, 0.4), 
+    rgba(255, 255, 255, 0.4)
+  ),url('./img/bg.png');
+  color:#FFF;
+}
