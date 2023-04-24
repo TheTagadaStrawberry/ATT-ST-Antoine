@@ -43,7 +43,7 @@ export default function Competition() {
                     
                     <div className='flex flex-row flex-wrap gap-2 mt-2 justify-center'>
                         {currentDiv.map(equipe =>
-                            <div className='relative'>
+                            <div className='relative shadow-md shadow-black/50'>
                                 <Link to={`/competitions/${equipe.nom}`}>
                                     <img className='w-96 h-96 object-cover rounded' src={equipe.photo} alt="images équipe" />
                                     <span className='absolute flex bottom-0 justify-center w-full bg-blue-800/50 font-bold'>Résultat {equipe.nom}</span>

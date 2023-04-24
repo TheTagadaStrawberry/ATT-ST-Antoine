@@ -18,6 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} /> 
+        <Route path="ATT-ST-Antoine" element={<Accueil />} />
         <Route path="actualite" element={<Actualite />} /> 
         <Route path="club" element={<Club />} />
         <Route path="competitions" element={<Competition />} >

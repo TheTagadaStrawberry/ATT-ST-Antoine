@@ -1,10 +1,10 @@
 import React from 'react'
 import Container from '../container/container'
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 export default function Teamresult() {
 
-    const {team} = useParams();
+
 
   return (
     <Container>

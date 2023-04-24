@@ -10,10 +10,13 @@ const Article = ({ title, photo, text }) => {
     }
 
     return (
-        <article className='border h-52  rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={ () => goTo()}>
-            <img className='w-72 h-48 rounded-lg object-contain float-left mr-2 block' src={photo} alt="actualités" />
-            <h2 className='text-xl underline'>{title}</h2>
-            <p className='text-justify line-clamp-6'>{text}</p>
+        <article className='border flex rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={ () => goTo()}>
+            <img className=' rounded-lg object-cover mr-2 block' src={photo} alt="actualités" />
+            <div>
+                <h2 className='text-xl underline'>{title}</h2>
+                <p className='text-justify line-clamp-6'>{text}</p>
+            </div>
+            
         </article>
     )
 }
@@ -23,8 +26,8 @@ export default function Accueil() {
     return (
         <Container >
             <main className='bg-blue-800/90 p-5'>
-                <h1 className='text-4xl font-bold text-center py-5'>Association de Tennis de Table de Saint-Antoine du Rocher</h1>
-                <h2 className='text-2xl font-bolder'>Actualités</h2>
+                <h1 className='text-3xl font-bold text-center py-5'>Association de Tennis de Table de Saint-Antoine du Rocher</h1>
+                <h2 className='text-2xl font-bolder underline ml-2 pb-2'>Actualités</h2>
                 <Article
                     title="Lorem Ipsum"
                     photo="https://picsum.photos/300/200"
