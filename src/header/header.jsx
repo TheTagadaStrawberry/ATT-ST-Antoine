@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../container/container'
 import { NavLink } from "react-router-dom";
 
@@ -9,20 +9,22 @@ import { BsFillHouseFill, BsArrowRightShort } from 'react-icons/bs'
 import {GrClose} from 'react-icons/gr'
 import { RxHamburgerMenu } from 'react-icons/rx'
 
-const MenuLink = ({ icon, title, links }) => {
-    let [LinkActive, setLinkActive] = useState(false)
+const MenuLink = ({ icon, title, links,toggleMenu,displayLink }) => {
+    let [linkActive, setLinkActive] = useState(displayLink)
 
     const toggleLinkActive = () => {
-        setLinkActive(!LinkActive)
+        setLinkActive(!linkActive)
     }
+
+    
+    
     return (
         <div className="relative">
             <span className=' flex gap-2 items-center cursor-default' onClick={toggleLinkActive}> {icon} {title}</span>
-            <ul className={`w-max pl-1 ${LinkActive ? 'block' : 'hidden'} transition duration-500 ease-in-out`}>
+            <ul className={`w-max pl-1 ${linkActive ? 'block' : 'hidden'} transition duration-500 ease-in-out`}>
                 {links.map(link =>
-                    <li className='flex flex-row items-center'><BsArrowRightShort /><NavLink to={link.to} onClick={() => setLinkActive(false)}>{link.nom}</NavLink></li>
+                    <li className='flex flex-row items-center'><BsArrowRightShort /><NavLink to={link.to} onClick={toggleMenu}>{link.nom}</NavLink></li>
                 )}
-
             </ul>
         </div>
 
@@ -36,9 +38,10 @@ const Header = () => {
     const toggleMenuActive = () => {
         setToggleMenu(!toggleMenu)
     }
-    let [toggleLargeMenu, setToggleLargeMenu] = useState(false)
-    const toggleLargeMenuActive = () => {
-        setToggleLargeMenu(!toggleLargeMenu)
+    let [toggleLinkMenu, setToggleLinkMenu] = useState(false)
+    const toggleLinkMenuActive = () => {
+        console.log()
+        setToggleLinkMenu(false)
     }
     return (
         <header className='h-20 w-screen bg-blue-800 shadow-md shadow-black/50'>
@@ -77,7 +80,7 @@ const Header = () => {
 
                 </nav>
                 <div className='pl-7 h-full flex items-center lg:hidden'>
-                    <span onClick={toggleMenuActive}> {toggleMenu ? <GrClose className={`text-2xl`}/> : <RxHamburgerMenu className={`text-2xl text-white`}/>} </span>
+                    <span onClick={toggleMenuActive}> {toggleMenu ? <GrClose className={`text-2xl`} onClick={toggleLinkMenuActive}/> : <RxHamburgerMenu className={`text-2xl text-white`}/>} </span>
                 </div>
                 <nav className={`shadow-md shadow-black/50 lg:hidden z-20 bg-blue-800/60 h-96 backdrop-blur-lg absolute top-[80px] left-0 w-screen flex flex-col items-center justify-center ${toggleMenu ? 'block' : 'hidden'}`} >
 
@@ -86,18 +89,24 @@ const Header = () => {
                             icon=<BsFillHouseFill />
                             title="Club"
                             links={[{ to: '/club', nom: "Historique" }, { to: '/', nom: "Nous retrouver" }, { to: '/', nom: "Nos partenaires" }]}
+                            toggleMenu={() => setToggleMenu(false)}
+                            displayLink={toggleLinkMenu}
                         />
 
                         <MenuLink
                             icon=<FaTableTennis />
                             title="Compétitions"
                             links={[{ to: '/competitions', nom: "Nos équipes" }, { to: '/competitions', nom: "Championnats" }]}
+                            toggleMenu={() => setToggleMenu(false)}
+                            displayLink={toggleLinkMenu}
                         />
 
                         <MenuLink
                             icon=<AiFillMail />
                             title="Contact"
                             links={[{ to: '/contact/inscription', nom: "Inscription" }, { to: '/contact/formulaire', nom: "Nous contacter" }]}
+                            toggleMenu={() => setToggleMenu(false)}
+                            displayLink={toggleLinkMenu}
                         />
 
                 </nav>
