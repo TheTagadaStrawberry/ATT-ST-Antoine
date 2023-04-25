@@ -44,16 +44,15 @@ const Header = () => {
     }
     let [toggleLinkMenu, setToggleLinkMenu] = useState(false)
     const toggleLinkMenuActive = () => {
-        console.log()
         setToggleLinkMenu(false)
     }
     return (
-        <header className='h-20 w-screen bg-blue-800 shadow-md shadow-black/50'>
+        <header className='h-20 bg-blue-800 shadow-md shadow-black/50'>
             <Container>
-                <nav className=' h-full flex flex-row gap-5 items-center justify-between max-lg:hidden'>
+                <nav className=' h-full flex flex-row gap-5 items-center justify-around lg:justify-between max-lg:hidden'>
                     <div className='h-full '>
                         {/* <NavLink to="/" > <img className='h-full' src={logo} alt="Logo" /> </NavLink > */}
-                        <NavLink to="/" > <img className='w-20 h-20 transform duration-150 ease-in-out hover:translate-y-[-10px]' src={TestSVG} /> </NavLink >
+                        <NavLink to="/" > <img className='w-20 h-20 transform duration-300 ease-in-out hover:translate-y-[-7px]' src={TestSVG} /> </NavLink >
                     </div>
                     <div className='flex flex-row'>
                         <div className='px-2 relative group'>

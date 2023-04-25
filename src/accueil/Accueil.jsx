@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'
 
+import SubContainer from '../container/subContainer'
 import Container from '../container/container'
 
 import { useNavigate, Link } from "react-router-dom";
@@ -34,6 +35,7 @@ export default function Accueil() {
     const [value, onChange] = useState(new Date());
     return (
         <Container >
+        <SubContainer >
             <main className='text-black p-5'>
                 <div className='flex flex-row items-center justify-center text-center gap-5 mb-5'>
                     <FaTableTennis className='text-7xl fill-red-600' />
@@ -45,7 +47,7 @@ export default function Accueil() {
                         <p className='mt-1'>Pour vous inscrire, veuillez-vous rendre à la page <Link className='underline' to="/contact/inscription">inscription</Link></p>
                     </div>
                     <div className='mt-5 md:mt-0 md:ml-3'>
-                        <Calendar className={'rounded-lg shadow-md shadow-black/50'} onChange={onChange} value={value} />
+                        <Calendar className={'rounded-lg shadow-md shadow-black/50'} onChange={onChange} defaultValue={value} />
                     </div>
 
                 </div>
@@ -72,6 +74,7 @@ export default function Accueil() {
                 />
 
             </main>
+        </SubContainer>
         </Container>
     )
 }

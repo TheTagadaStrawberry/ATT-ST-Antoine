@@ -7,7 +7,7 @@ import {SiGooglemaps} from 'react-icons/si'
 
 const Footer = () => {
     return (
-        <footer className='h-20 w-screen bg-blue-800 bottom-0 left-0 justify-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
+        <footer className='h-20 bg-blue-800'>
             <Container>
                 <div className='flex h-full w-full flex-row items-center justify-around'>
                     <div className='flex flex-row gap-3 w-full h-full items-center justify-center text-center'>
