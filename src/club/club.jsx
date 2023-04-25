@@ -1,14 +1,15 @@
 import React from 'react'
-import Container from '../container/container'
+import SubContainer from '../container/subContainer'
 
 export default function Club() {
     return (
-        <Container>
-            <main className='bg-blue-800/90 p-5'>
+        <SubContainer>
+            <main className='p-5'>
                 <div>
-                <p>dddddddddddddddddddddddd dddddddddddddddddddddddddddd ddddddddddddddddddddd dddddddddddddddd dddddddddddd </p>
+                    <h1>Historique du club</h1>
+                <p>Le club fut fondé par Jean-Jérôme en l'an 1538 un mardi soir vers 23H30 autour d'une bière. </p>
                 </div>
             </main>
-        </Container>
+        </SubContainer>
     )
 }

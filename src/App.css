@@ -6,12 +6,18 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+#root{
+  min-height: 100vh;
+}
 body{
-  height:100vh;
+  min-height:100vh;
   background-color:  #ddd;
   /* background-image:  linear-gradient(
     rgba(255, 255, 255, 0.4), 
     rgba(255, 255, 255, 0.4)
   ),url('./img/bg.png'); */
   color:#FFF;
+}
+svg path{
+  stroke:#fff;
 }

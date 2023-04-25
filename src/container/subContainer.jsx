@@ -6,7 +6,7 @@ export default function SubContainer({children}) {
     var minHeight = calcMinHeight();
     console.log(minHeight)
   return (
-    <div className={`bg-blue-800/90 min-h-[${minHeight}px]`}>
+    <div className={`max-w-6xl md:max-w-screen sm:max-w-screen m-auto text-black  w-full min-h-[${minHeight}px]`}>
         {children}
     </div>
   )

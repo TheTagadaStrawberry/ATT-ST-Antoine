@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Container from '../container/container'
+import SubContainer from '../container/subContainer'
 import { Link, Outlet } from 'react-router-dom';
 
 
@@ -35,35 +35,34 @@ export default function Competition() {
     let [currentDiv, setCurrentDiv] = useState([JEUNES, D2, D3, D4])
 
     return (
-        <Container>
-            <main className='bg-blue-800/90 p-5 flex flex-col'>
+        <SubContainer>
+            <main className='p-5 flex flex-col'>
                 <article>
-                    <h1 className='text-2xl'>Compétitions</h1>
-                    <h2 className='text-xl'>Nos équipes</h2>
+                    <h1 className='text-xl sm:text-2xl text-center lg:text-left font-bolder underline mb-6'>Nos équipes</h1>
                     
                     <div className='flex flex-row flex-wrap gap-2 mt-2 justify-center'>
                         {currentDiv.map(equipe =>
                             <div className='relative shadow-md shadow-black/50'>
                                 <Link to={`/competitions/${equipe.nom}`}>
-                                    <img className='w-96 h-96 object-cover rounded' src={equipe.photo} alt="images équipe" />
-                                    <span className='absolute flex bottom-0 justify-center w-full bg-blue-800/50 font-bold'>Résultat {equipe.nom}</span>
+                                    <img className='max-w-96 max-h-96 lg:h-96 lg:w-96 object-cover rounded' src={equipe.photo} alt="images équipe" />
+                                    <span className='absolute flex bottom-0 text-sm md:text-base justify-center w-full bg-blue-800/50 font-bold text-white'>Equipe {equipe.nom}</span>
                                 </Link>
 
                             </div>
                         )}
                     </div>
-                    <div className='mt-2'>
+                    {/* <div className='mt-2'>
                         <ul className='flex flex-row justify-center items-center'>
                             <li className='px-3 bg-blue-500 cursor-pointer hover:bg-blue-600'><Link to='/competitions/Jeunes'>jeunes</Link></li>
                             <li className='px-3 bg-blue-500 cursor-pointer hover:bg-blue-600'><Link to='/competitions/D2'>D2</Link></li>
                             <li className='px-3 bg-blue-500 cursor-pointer hover:bg-blue-600'><Link to='/competitions/D3'>D3</Link></li>
                             <li className='px-3 bg-blue-500 cursor-pointer hover:bg-blue-600'><Link to='/competitions/D4'>D4</Link></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <Outlet />
                 </article>
             </main>
 
-        </Container>
+        </SubContainer>
     )
 }
