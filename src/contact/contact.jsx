@@ -21,8 +21,8 @@ export default function Contact() {
                                 <textarea placeholder='Votre Message *' className='rounded p-2 ' />
                             </div>
                             <div className='flex flex-row justify-end gap-3 mt-3'>
-                                <button type="button" className='rounded border p-2 hover:bg-white hover:text-blue-800/90 transition duration-200 ease'>Reset</button>
-                                <button type="button" className='rounded border p-2 hover:bg-white hover:text-blue-800/90 transition duration-200 ease'>Envoyer</button>
+                                <button type="button" className='rounded-xl border p-2 text-white bg-blue-800/90 hover:bg-white hover: transition duration-200 ease'>Reset</button>
+                                <button type="button" className='rounded-xl border p-2  text-white bg-blue-800/90 hover:bg-white hover:text-blue-800/90 transition duration-200 ease'>Envoyer</button>
                             </div>
                         </form>
                     </article>

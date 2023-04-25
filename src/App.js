@@ -10,6 +10,7 @@ import Accueil from './accueil/Accueil';
 import Actualite from './actualites/actualites';
 
 import './App.css';
+import Inscription from './contact/inscription';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
         <Route path="competitions" element={<Competition />} >
             <Route path=":id" element={<Teamresult />} />
         </Route>
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact/inscription" element={<Inscription />} />
+        <Route path="contact/formulaire" element={<Contact />} />
       </Routes>
       <Footer />
 

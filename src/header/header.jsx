@@ -62,16 +62,15 @@ const Header = () => {
                         <div className='px-2 relative  group'>
                             <span className='h-full flex flex-row gap-2 items-center cursor-default'> <FaTableTennis />Compétitions</span>
                             <ul className='absolute w-max bg-black/50 text-center p-2 opacity-0 group-hover:opacity-100'>
-                                <li>Nos équipes</li>
-                                <li><NavLink to='/competitions' >Championnats</NavLink></li>
-                                <li>Indiv</li>
+                                <li><NavLink to='/competitions' >Nos équipes</NavLink></li>
+                                <li><NavLink to='/competitions' >Résultats</NavLink></li>
                             </ul>
                         </div>
                         <div className='px-2 relative group'>
                             <span className='h-full flex flex-row gap-2 items-center cursor-default'> <AiFillMail /> Contact</span>
                             <ul className='absolute w-max bg-black/50 text-center p-2 opacity-0 group-hover:opacity-100 translate-x-[-50px]'>
-                                <li><NavLink to='/contact'>Inscription</NavLink></li>
-                                <li><NavLink to='/contact'>Nous contacter</NavLink></li>
+                                <li><NavLink to='/contact/inscription'>Inscription</NavLink></li>
+                                <li><NavLink to='/contact/formulaire'>Nous contacter</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -92,13 +91,13 @@ const Header = () => {
                         <MenuLink
                             icon=<FaTableTennis />
                             title="Compétitions"
-                            links={[{ to: '/competitions', nom: "Nos équipes" }, { to: '/competitions', nom: "Championnats" }, { to: '/competitions', nom: "Indiv" }]}
+                            links={[{ to: '/competitions', nom: "Nos équipes" }, { to: '/competitions', nom: "Championnats" }]}
                         />
 
                         <MenuLink
                             icon=<AiFillMail />
                             title="Contact"
-                            links={[{ to: '/contact', nom: "Inscription" }, { to: '/contact', nom: "Nous contacter" }]}
+                            links={[{ to: '/contact/inscription', nom: "Inscription" }, { to: '/contact/formulaire', nom: "Nous contacter" }]}
                         />
 
                 </nav>

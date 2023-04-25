@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css'
 
 import Container from '../container/container'
 
-import { redirect } from "react-router-dom";
+import { redirect, Link } from "react-router-dom";
 import { FaTableTennis } from 'react-icons/fa'
+import { HiOutlineLightBulb } from 'react-icons/hi'
 
 import img from '../img/img.jpg'
 
@@ -17,7 +20,7 @@ const Article = ({ title, photo, text }) => {
     return (
         <article className='border flex flex-col md:flex-row border-gray-400 rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={() => goTo()}>
             <div className='flex justify-center items-center w-full'>
-                <img className=' rounded-lg max-w-xs max-h-xs object-fill sm:object-cover md:mr-2' src={photo} alt="actualités" />
+                <img className=' rounded-lg md:max-w-xs md:max-h-xs object-cover md:mr-2' src={photo} alt="actualités" />
             </div>
             <div className='flex flex-col justify-center items-center'>
                 <h2 className='text-xl text-center md:text-left underline'>{title}</h2>
@@ -30,12 +33,24 @@ const Article = ({ title, photo, text }) => {
 
 
 export default function Accueil() {
+
+    const [value, onChange] = useState(new Date());
     return (
         <Container >
             <main className='text-black p-5'>
                 <div className='flex flex-row items-center justify-center text-center gap-5 mb-5'>
-                    <FaTableTennis className='text-7xl'/>
+                    <FaTableTennis className='text-7xl fill-red-600' />
                     <h1 className='text-2xl md:text-3xl font-bold text-center py-5'>Association de Tennis de Table de Saint-Antoine du Rocher</h1>
+                </div>
+                <div className='p-4 flex flex-col md:flex-row items-center justify-around'>
+                    <div className='flex flex-col md:flex-row  justify-center items-center'>
+                        <HiOutlineLightBulb className='text-4xl fill-yellow-300'/>
+                        <p className='mt-1'>Pour vous inscrire, veuillez-vous rendre à la page <Link className='underline' to="/contact/inscription">inscription</Link></p>
+                    </div>
+                    <div className='mt-5 md:mt-0 md:ml-3'>
+                        <Calendar className={'rounded-lg shadow-md shadow-black/50'} onChange={onChange} value={value} />
+                    </div>
+
                 </div>
                 <h2 className='text-xl text-center md:text-2xl md:text-left font-bolder underline ml-2 pb-2'>Actualités</h2>
                 <Article
