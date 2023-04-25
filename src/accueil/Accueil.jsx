@@ -16,7 +16,7 @@ const Article = ({ title, photo, text }) => {
     const navigate = useNavigate();
 
     return (
-        <article className='border flex flex-col md:flex-row border-gray-400 rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate('/actualite')}>
+        <article className='border flex flex-col lg:hover:scale-105 transition duration-200 ease-in-out md:flex-row border-gray-400 rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate('/actualite')}>
             <div className='flex justify-center items-center w-full'>
                 <img className=' rounded-lg md:max-w-xs md:max-h-xs object-cover md:mr-2' src={photo} alt="actualités" />
             </div>

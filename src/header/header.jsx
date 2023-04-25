@@ -52,7 +52,8 @@ const Header = () => {
                 <nav className=' h-full flex flex-row gap-5 items-center justify-around lg:justify-between max-lg:hidden'>
                     <div className='h-full '>
                         {/* <NavLink to="/" > <img className='h-full' src={logo} alt="Logo" /> </NavLink > */}
-                        <NavLink to="/" > <img className='w-20 h-20 transform duration-300 ease-in-out hover:translate-y-[-7px]' src={TestSVG} /> </NavLink >
+                        <NavLink to="/"> <img className='ml-1 h-20 hover:animate-bounce' src={TestSVG} /> </NavLink >
+                        {/* hover:translate-y-[-7px] */}
                     </div>
                     <div className='flex flex-row'>
                         <div className='px-2 relative group'>
