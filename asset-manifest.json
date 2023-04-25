@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/ATT-ST-Antoine/static/css/main.4014c7cf.css",
-    "main.js": "/ATT-ST-Antoine/static/js/main.b09e285b.js",
+    "main.css": "/ATT-ST-Antoine/static/css/main.33a4c652.css",
+    "main.js": "/ATT-ST-Antoine/static/js/main.94e450d1.js",
     "static/media/jeune.png": "/ATT-ST-Antoine/static/media/jeune.defc3089c4d1299eecde.png",
     "static/media/D4.jpg": "/ATT-ST-Antoine/static/media/D4.74983fa07baec08d3cf8.jpg",
     "static/media/D2.jpg": "/ATT-ST-Antoine/static/media/D2.97c0eef8ade74e748e05.jpg",
     "static/media/logo.png": "/ATT-ST-Antoine/static/media/logo.8322f3ff80fe1c71bdd1.png",
+    "static/media/img.jpg": "/ATT-ST-Antoine/static/media/img.cc3d0712bcd1319474a6.jpg",
     "index.html": "/ATT-ST-Antoine/index.html",
-    "main.4014c7cf.css.map": "/ATT-ST-Antoine/static/css/main.4014c7cf.css.map",
-    "main.b09e285b.js.map": "/ATT-ST-Antoine/static/js/main.b09e285b.js.map"
+    "main.33a4c652.css.map": "/ATT-ST-Antoine/static/css/main.33a4c652.css.map",
+    "main.94e450d1.js.map": "/ATT-ST-Antoine/static/js/main.94e450d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4014c7cf.css",
-    "static/js/main.b09e285b.js"
+    "static/css/main.33a4c652.css",
+    "static/js/main.94e450d1.js"
   ]
 }
