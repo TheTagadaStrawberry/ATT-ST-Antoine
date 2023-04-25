@@ -4,7 +4,7 @@ import 'react-calendar/dist/Calendar.css'
 
 import Container from '../container/container'
 
-import { redirect, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FaTableTennis } from 'react-icons/fa'
 import { HiOutlineLightBulb } from 'react-icons/hi'
 
@@ -12,13 +12,10 @@ import img from '../img/img.jpg'
 
 const Article = ({ title, photo, text }) => {
 
-    const goTo = () => {
-        console.log('coucou')
-        return redirect('/actualite')
-    }
+    const navigate = useNavigate();
 
     return (
-        <article className='border flex flex-col md:flex-row border-gray-400 rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={() => goTo()}>
+        <article className='border flex flex-col md:flex-row border-gray-400 rounded-lg mb-3 p-2 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate('/actualite')}>
             <div className='flex justify-center items-center w-full'>
                 <img className=' rounded-lg md:max-w-xs md:max-h-xs object-cover md:mr-2' src={photo} alt="actualités" />
             </div>
