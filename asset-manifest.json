@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ATT-ST-Antoine/static/css/main.bb4cb1bb.css",
-    "main.js": "/ATT-ST-Antoine/static/js/main.fbf73d04.js",
+    "main.css": "/ATT-ST-Antoine/static/css/main.43fe0ee5.css",
+    "main.js": "/ATT-ST-Antoine/static/js/main.5e821b2b.js",
     "static/media/jeune.png": "/ATT-ST-Antoine/static/media/jeune.defc3089c4d1299eecde.png",
     "static/media/D4.jpg": "/ATT-ST-Antoine/static/media/D4.74983fa07baec08d3cf8.jpg",
     "static/media/D2.jpg": "/ATT-ST-Antoine/static/media/D2.97c0eef8ade74e748e05.jpg",
@@ -10,11 +10,11 @@
     "static/media/formulaire-inscription.pdf": "/ATT-ST-Antoine/static/media/formulaire-inscription.840025d3d43b297ceccd.pdf",
     "static/media/imageTest.svg": "/ATT-ST-Antoine/static/media/imageTest.2d53cba4852b24895034f9be87172cdd.svg",
     "index.html": "/ATT-ST-Antoine/index.html",
-    "main.bb4cb1bb.css.map": "/ATT-ST-Antoine/static/css/main.bb4cb1bb.css.map",
-    "main.fbf73d04.js.map": "/ATT-ST-Antoine/static/js/main.fbf73d04.js.map"
+    "main.43fe0ee5.css.map": "/ATT-ST-Antoine/static/css/main.43fe0ee5.css.map",
+    "main.5e821b2b.js.map": "/ATT-ST-Antoine/static/js/main.5e821b2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb4cb1bb.css",
-    "static/js/main.fbf73d04.js"
+    "static/css/main.43fe0ee5.css",
+    "static/js/main.5e821b2b.js"
   ]
 }
