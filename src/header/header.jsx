@@ -5,7 +5,8 @@ import { NavLink } from "react-router-dom";
 import logo from '../img/logo.png'
 import TestSVG from '../img/imageTest.svg'
 
-import { AiFillMail, AiOutlineClose } from 'react-icons/ai'
+import { AiFillMail } from 'react-icons/ai'
+import { RiArrowDownSFill } from 'react-icons/ri'
 import { FaTableTennis } from 'react-icons/fa'
 import { BsFillHouseFill, BsArrowRightShort } from 'react-icons/bs'
 import { GrClose } from 'react-icons/gr'
@@ -52,33 +53,34 @@ const Header = () => {
                 <nav className=' h-full flex flex-row gap-5 items-center justify-around lg:justify-between max-lg:hidden'>
                     <div className='h-full '>
                         {/* <NavLink to="/" > <img className='h-full' src={logo} alt="Logo" /> </NavLink > */}
-                        <NavLink to="/"> <img className='ml-1 h-20 hover:animate-bounce' src={TestSVG} /> </NavLink >
+                        <NavLink to="/ATT-ST-Antoine/"> <img className='ml-1 h-20 hover:animate-bounce' src={TestSVG} /> </NavLink >
                         {/* hover:translate-y-[-7px] */}
                     </div>
-                    <div className='flex flex-row'>
+                    <div className='flex flex-row h-full'>
                         <div className='px-2 relative group'>
-                            <span to='/club' className='h-full flex flex-row gap-2 items-center cursor-default'>
+                            <span to='/club' className='h-full flex flex-row gap-2 items-center cursor-default link hover:underline'>
                                 <BsFillHouseFill />
                                 Club
+                                <RiArrowDownSFill />
                             </span>
-                            <ul className='absolute w-max bg-black/50 text-center p-2 opacity-0 group-hover:opacity-100 backdrop-blur-md'>
-                                <li><NavLink to='/club'>Historique</NavLink></li>
-                                <li>Nous retrouver</li>
+                            <ul className='absolute z-10 shadow-md shadow-black/50 rounded-b-lg bg-blue-800 min-w-full w-max text-center p-3 hidden group-hover:block'>
+                                <li><NavLink to='/ATT-ST-Antoine/club'>Historique</NavLink></li>
+                                <li><NavLink to='/ATT-ST-Antoine/nous-retrouver'>Nous retrouver</NavLink></li>
                                 <li>Nos partenaires</li>
                             </ul>
                         </div>
-                        <div className='px-2 relative  group'>
-                            <span className='h-full flex flex-row gap-2 items-center cursor-default'> <FaTableTennis />Compétitions</span>
-                            <ul className='absolute w-max bg-black/50 text-center p-2 opacity-0 group-hover:opacity-100'>
-                                <li><NavLink to='/competitions' >Nos équipes</NavLink></li>
-                                <li><NavLink to='/competitions' >Résultats</NavLink></li>
+                        <div className='px-2 h-full relative group'>
+                            <span className='h-full flex flex-row gap-2 items-center cursor-default link hover:underline'> <FaTableTennis />Compétitions<RiArrowDownSFill /></span>
+                            <ul className='absolute z-10 min-w-full bg-blue-800 shadow-md shadow-black/50 rounded-b-lg text-center p-3 hidden  group-hover:block'>
+                                <li><NavLink to='/ATT-ST-Antoine/competitions' >Nos équipes</NavLink></li>
+                                <li><NavLink to='/ATT-ST-Antoine/competitions' >Résultats</NavLink></li>
                             </ul>
                         </div>
                         <div className='px-2 relative group'>
-                            <span className='h-full flex flex-row gap-2 items-center cursor-default'> <AiFillMail /> Contact</span>
-                            <ul className='absolute w-max bg-black/50 text-center p-2 opacity-0 group-hover:opacity-100 translate-x-[-50px]'>
-                                <li><NavLink to='/contact/inscription'>Inscription</NavLink></li>
-                                <li><NavLink to='/contact/formulaire'>Nous contacter</NavLink></li>
+                            <span className='h-full flex flex-row gap-2 items-center cursor-default link hover:underline'> <AiFillMail /> Contact <RiArrowDownSFill /></span>
+                            <ul className='absolute z-10 min-w-full w-max bg-blue-800 text-center shadow-md shadow-black/50 rounded-b-lg p-3 hidden group-hover:block translate-x-[-35px]'>
+                                <li><NavLink to='/ATT-ST-Antoine/inscription'>Inscription</NavLink></li>
+                                <li><NavLink to='/ATT-ST-Antoine/formulaire'>Nous contacter</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +98,7 @@ const Header = () => {
                     <MenuLink
                         icon=<BsFillHouseFill />
                         title="Club"
-                        links={[{ to: '/club', nom: "Historique" }, { to: '/', nom: "Nous retrouver" }, { to: '/', nom: "Nos partenaires" }]}
+                        links={[{ to: '/club', nom: "Historique" }, { to: '/ATT-ST-Antoine/nous-retrouver', nom: "Nous retrouver" }, { to: '/ATT-ST-Antoine/', nom: "Nos partenaires" }]}
                         toggleMenu={() => setToggleMenu(false)}
                         displayLink={toggleLinkMenu}
                     />
@@ -104,7 +106,7 @@ const Header = () => {
                     <MenuLink
                         icon=<FaTableTennis />
                         title="Compétitions"
-                        links={[{ to: '/competitions', nom: "Nos équipes" }, { to: '/competitions', nom: "Championnats" }]}
+                        links={[{ to: '/ATT-ST-Antoine/competitions', nom: "Nos équipes" }, { to: '/ATT-ST-Antoine/competitions', nom: "Championnats" }]}
                         toggleMenu={() => setToggleMenu(false)}
                         displayLink={toggleLinkMenu}
                     />

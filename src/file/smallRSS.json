@@ -1,0 +1,44 @@
+{
+    "item": [
+        {
+            "link": "https://www.fftt.com/site/actualites/2023-04-26/championnats-de-france-sport-en-entreprise-2023",
+            "title": "Championnats de France Sport en Entreprise 2023",
+            "description": "L'édition 2023 des Championnats de France Corpo a lieu ce week-end à Villeneuve-sur-Lot !...",
+            "pubDate": "Wed, 26 Apr 2023 11:42:05 +0200",
+            "enclosure": {
+                "_url": "https://www.fftt.com/site/medias/news/news__20230426114158.jpg",
+                "_type": "image/jpeg"
+            }
+        },
+        {
+            "link": "https://www.fftt.com/site/actualites/2023-04-25/1947-14emes-championnats-monde-paris",
+            "title": "1947, les 14èmes championnats du Monde à Paris",
+            "description": "A quelques jours des championnats du monde qui se dérouleront à Durban, nous avons décidé de...",
+            "pubDate": "Tue, 25 Apr 2023 11:42:05 +0200",
+            "enclosure": {
+                "_url": "https://www.fftt.com/site/medias/news/news__20230425094104.jpg",
+                "_type": "image/jpeg"
+            }
+        },
+        {
+            "link": "https://www.fftt.com/site/actualites/2023-04-25/appel-concurrence-marche-de-prestations-de-services-d-assurance-2023-2027",
+            "title": "Appel à concurrence : Marché de prestations de services d’assurance 2023-2027",
+            "description": "L’appel à concurrence pour les prestations d’assurances suivantes au profit de la...",
+            "pubDate": "Tue, 25 Apr 2023 11:42:05 +0200",
+            "enclosure": {
+                "_url": "https://www.fftt.com/site/medias/news/news__20230425135130.jpg",
+                "_type": "image/jpeg"
+            }
+        },
+        {
+            "link": "https://www.fftt.com/site/actualites/2023-04-24/pour-sop-lycee-yourcenar-de-beuvry-teste-pingvr",
+            "title": "Pour la SOP, le lycée Yourcenar de Beuvry teste le PingVR !",
+            "description": "L'édition 2023 de la Semaine Olympique et Paralympique (SOP) a été marquée par la participation...",
+            "pubDate": "Mon, 24 Apr 2023 11:42:05 +0200",
+            "enclosure": {
+                "_url": "https://www.fftt.com/site/medias/news/news__20230424115002.jpg",
+                "_type": "image/jpeg"
+            }
+        }
+    ]
+}
