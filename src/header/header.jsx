@@ -65,7 +65,7 @@ const Header = () => {
                             </span>
                             <ul className='absolute z-10 shadow-md shadow-black/50 rounded-b-lg bg-blue-800 min-w-full w-max text-center p-3 hidden group-hover:block'>
                                 <li><NavLink to='/ATT-ST-Antoine/club'>Historique</NavLink></li>
-                                <li><NavLink to='/ATT-ST-Antoine/nous-retrouver'>Nous retrouver</NavLink></li>
+                                <li><NavLink to='/ATT-ST-Antoine/plan-d-acces'>Plan d'accès</NavLink></li>
                                 <li>Nos partenaires</li>
                             </ul>
                         </div>
@@ -98,7 +98,7 @@ const Header = () => {
                     <MenuLink
                         icon=<BsFillHouseFill />
                         title="Club"
-                        links={[{ to: '/club', nom: "Historique" }, { to: '/ATT-ST-Antoine/nous-retrouver', nom: "Nous retrouver" }, { to: '/ATT-ST-Antoine/', nom: "Nos partenaires" }]}
+                        links={[{ to: '/club', nom: "Historique" }, { to: '/ATT-ST-Antoine/plan-d-acces', nom: "Plan d'accès" }, { to: '/ATT-ST-Antoine/', nom: "Nos partenaires" }]}
                         toggleMenu={() => setToggleMenu(false)}
                         displayLink={toggleLinkMenu}
                     />

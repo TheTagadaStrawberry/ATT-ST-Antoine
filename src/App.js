@@ -5,14 +5,13 @@ import Footer from './footer/Footer';
 import Competition from './championnat/competition';
 import Club from './club/club';
 import Contact from './contact/contact';
-import Teamresult from './championnat/teamresult';
 import Accueil from './accueil/Accueil';
 import Actualite from './actualites/actualite';
 import Actualites from './actualites/actualites';
-
-import './App.css';
 import Inscription from './contact/inscription';
 import NousRetrouver from './club/nousRetrouver';
+
+import './App.css';
 
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
         <Route path="ATT-ST-Antoine/actualite" element={<Actualite />} />
         <Route path="ATT-ST-Antoine/actualites" element={<Actualites />} />  
         <Route path="ATT-ST-Antoine/club" element={<Club />} />
-        <Route Path="ATT-ST-Antoine/nous-retrouver" element={<NousRetrouver />} />
+        <Route Path="ATT-ST-Antoine/plan-d-acces" element={<NousRetrouver />} />
         <Route path="ATT-ST-Antoine/competitions" element={<Competition />} />
         <Route path="ATT-ST-Antoine/inscription" element={<Inscription />} />
         <Route path="ATT-ST-Antoine/formulaire" element={<Contact />} />
