@@ -20,10 +20,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="ATT-ST-Antoine" element={<Accueil />} />
-        <Route path="ATT-ST-Antoine/actualite" element={<Actualite />} />
+        <Route path="ATT-ST-Antoine/actualite/:id" element={<Actualite />} />
         <Route path="ATT-ST-Antoine/actualites" element={<Actualites />} />  
         <Route path="ATT-ST-Antoine/club" element={<Club />} />
-        <Route Path="ATT-ST-Antoine/plan-d-acces" element={<Acces />} />
+        <Route path="ATT-ST-Antoine/plan-d-acces" element={<Acces />} />
         <Route path="ATT-ST-Antoine/competitions" element={<Competition />} />
         <Route path="ATT-ST-Antoine/inscription" element={<Inscription />} />
         <Route path="ATT-ST-Antoine/formulaire" element={<Contact />} />

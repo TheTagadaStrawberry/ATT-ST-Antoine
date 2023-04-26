@@ -26,7 +26,7 @@ const MenuLink = ({ icon, title, links, toggleMenu, displayLink }) => {
     return (
         <div className="relative">
             <span className=' flex gap-2 items-center cursor-default' onClick={toggleLinkActive}> {icon} {title}</span>
-            <ul className={`w-max pl-1 ${linkActive ? 'block' : 'hidden'} transition duration-500 ease-in-out`}>
+            <ul className={`w-max pl-1 ${linkActive ? 'block' : 'hidden'} mb-3 mt-1`}>
                 {links.map(link =>
                     <li className='flex flex-row items-center' onClick={() => toggleLinkActive()}><BsArrowRightShort /><NavLink to={link.to} onClick={toggleMenu}>{link.nom}</NavLink></li>
                 )}
@@ -89,16 +89,16 @@ const Header = () => {
                 <div className='pl-7 h-full flex items-center justify-center lg:hidden relative'>
                     <span onClick={toggleMenuActive} className='block absolute top-6 left-3'> {toggleMenu ? <GrClose className={`text-2xl`} onClick={toggleLinkMenuActive} /> : <RxHamburgerMenu className={`text-2xl text-white`} />} </span>
                     {/* <div className='w-20 h-20 flex items-center justi'> */}
-                    <NavLink to="/" ><img className='w-20 h-20 flex items-center justify-center' src={TestSVG} /></NavLink>
+                    <NavLink to="ATT-ST-Antoine/" ><img className='w-20 h-20 flex items-center justify-center' src={TestSVG} onClick={() => setToggleMenu(false)}/></NavLink>
                     {/* </div> */}
                 </div>
-                <nav className={`shadow-md shadow-black/50 lg:hidden z-20 bg-blue-800/60 h-96 backdrop-blur-lg absolute top-[80px] left-0 w-screen flex flex-col items-center justify-center ${toggleMenu ? 'block' : 'hidden'}`} >
+                <nav className={`p-3 shadow-md shadow-black/50 lg:hidden z-20 bg-blue-800/60 h-max backdrop-blur-lg absolute top-[80px] left-0 w-screen flex flex-col items-center ${toggleMenu ? 'block' : 'hidden'}`} >
 
                     {/* <NavLink to="/">Accueil</NavLink> */}
                     <MenuLink
                         icon=<BsFillHouseFill />
                         title="Club"
-                        links={[{ to: '/club', nom: "Historique" }, { to: '/ATT-ST-Antoine/plan-d-acces', nom: "Plan d'accès" }, { to: '/ATT-ST-Antoine/', nom: "Nos partenaires" }]}
+                        links={[{ to: '/ATT-ST-Antoine/club', nom: "Historique" }, { to: '/ATT-ST-Antoine/plan-d-acces', nom: "Plan d'accès" }, { to: '/ATT-ST-Antoine/', nom: "Nos partenaires" }]}
                         toggleMenu={() => setToggleMenu(false)}
                         displayLink={toggleLinkMenu}
                     />
@@ -114,7 +114,7 @@ const Header = () => {
                     <MenuLink
                         icon=<AiFillMail />
                         title="Contact"
-                        links={[{ to: '/contact/inscription', nom: "Inscription" }, { to: '/contact/formulaire', nom: "Nous contacter" }]}
+                        links={[{ to: '/ATT-ST-Antoine/inscription', nom: "Inscription" }, { to: '/ATT-ST-Antoine/formulaire', nom: "Nous contacter" }]}
                         toggleMenu={() => setToggleMenu(false)}
                         displayLink={toggleLinkMenu}
                     />

@@ -8,9 +8,9 @@ import bigRSS from '../file/bigRSS.json'
 const Article = ({ title, photo, text, date }) => {
 
     const navigate = useNavigate();
-
+    window.scrollTo(0,0)
     return (
-        <article className=' relative border flex flex-col bg-[#eee] lg:hover:scale-105 transition duration-200 ease-in-out md:flex-row border-gray-400 rounded-lg mb-3 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate('/ATT-ST-Antoine/actualite')}>
+        <article className=' relative border flex flex-col bg-[#eee] lg:hover:scale-105 transition duration-200 ease-in-out md:flex-row border-gray-400 rounded-lg mb-3 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate(`/ATT-ST-Antoine/actualite/${title}`)}>
             <div className='flex justify-center items-center lg:mr-3'>
                 <img className='rounded-t-lg lg:rounded-l-lg md:max-w-md md:max-h-md object-cover md:mr-2' src={photo} alt="actualités" />
             </div>

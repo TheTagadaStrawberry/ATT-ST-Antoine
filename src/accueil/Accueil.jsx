@@ -22,7 +22,7 @@ const Article = ({ title, photo, text, date }) => {
     const navigate = useNavigate();
 
     return (
-        <article className=' relative border flex flex-col bg-[#eee] lg:hover:scale-105 transition duration-200 ease-in-out md:flex-row border-gray-400 rounded-lg mb-3 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate('/ATT-ST-Antoine/actualite')}>
+        <article className=' relative border flex flex-col bg-[#eee] lg:hover:scale-105 transition duration-200 ease-in-out md:flex-row border-gray-400 rounded-lg mb-3 shadow-md shadow-black/50 cursor-pointer' onClick={() => navigate(`/ATT-ST-Antoine/actualite/${title}`)}>
             <div className='flex justify-center items-center lg:mr-3'>
                 <img className='rounded-t-lg lg:rounded-l-lg md:max-w-md md:max-h-md object-cover md:mr-2' src={photo} alt="actualités" />
             </div>
@@ -56,7 +56,7 @@ export default function Accueil() {
                     <div className='p-4 flex flex-col md:flex-row items-center justify-around'>
                         <div className='flex flex-col md:flex-row  justify-center items-center'>
                             <HiOutlineLightBulb className='text-4xl fill-yellow-300' />
-                            <p className='mt-1'>Pour vous inscrire, veuillez vous rendre à la page <Link className='underline text-white bg-red-500 animate-pulse' to="/contact/inscription">inscription</Link></p>
+                            <p className='mt-1'>Pour vous inscrire, veuillez vous rendre à la page <Link className='underline text-white bg-red-500 animate-pulse' to="/ATT-ST-Antoine/inscription">inscription</Link></p>
                         </div>
                         <div className='mt-5 md:mt-0 md:ml-3'>
                             <Calendar className={'rounded-lg shadow-md shadow-black/50'} onChange={onChange} defaultValue={value} />
