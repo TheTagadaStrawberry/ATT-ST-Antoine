@@ -10,6 +10,7 @@ import Actualite from './actualites/actualite';
 import Actualites from './actualites/actualites';
 import Inscription from './contact/inscription';
 import Acces from './club/acces';
+import Bureau from './club/bureau';
 
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="ATT-ST-Antoine/actualite/:id" element={<Actualite />} />
         <Route path="ATT-ST-Antoine/actualites" element={<Actualites />} />  
         <Route path="ATT-ST-Antoine/club" element={<Club />} />
+        <Route path="ATT-ST-Antoine/bureau" element={<Bureau />} />
         <Route path="ATT-ST-Antoine/plan-d-acces" element={<Acces />} />
         <Route path="ATT-ST-Antoine/competitions" element={<Competition />} />
         <Route path="ATT-ST-Antoine/inscription" element={<Inscription />} />
