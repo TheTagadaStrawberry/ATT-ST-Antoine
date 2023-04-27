@@ -87,7 +87,7 @@ const Header = () => {
 
                 </nav>
                 <div className='pl-7 h-full flex items-center justify-center lg:hidden relative'>
-                    <span onClick={toggleMenuActive} className='block absolute top-6 left-3'> {toggleMenu ? <GrClose className={`text-2xl`} onClick={toggleLinkMenuActive} /> : <RxHamburgerMenu className={`text-2xl text-white`} />} </span>
+                    <span onClick={toggleMenuActive} className='block absolute top-7 left-3 select-none'> {toggleMenu ? <GrClose className={`text-2xl`} onClick={toggleLinkMenuActive} /> : <RxHamburgerMenu className={`text-2xl text-white`} />} </span>
                     {/* <div className='w-20 h-20 flex items-center justi'> */}
                     <NavLink to="ATT-ST-Antoine/" ><img className='w-20 h-20 flex items-center justify-center' src={TestSVG} onClick={() => setToggleMenu(false)}/></NavLink>
                     {/* </div> */}
