@@ -56,7 +56,7 @@ export default function Accueil() {
                     <div className='p-4 flex flex-col md:flex-row items-center justify-around'>
                         <div className='flex flex-col md:flex-row  justify-center items-center'>
                             <HiOutlineLightBulb className='text-4xl fill-yellow-300' />
-                            <p className='mt-1'>Pour vous inscrire, veuillez vous rendre à la page <Link className='underline text-white bg-red-500 animate-pulse' to="/ATT-ST-Antoine/inscription">inscription</Link></p>
+                            <p className='mt-1'>Pour vous inscrire, veuillez vous rendre à la page <Link className='underline text-white bg-red-500 animate-pulse' to="/ATT-ST-Antoine/inscription">inscription</Link>.</p>
                         </div>
                         <div className='mt-5 md:mt-0 md:ml-3'>
                             <Calendar className={'rounded-lg shadow-md shadow-black/50'} onChange={onChange} defaultValue={value} />

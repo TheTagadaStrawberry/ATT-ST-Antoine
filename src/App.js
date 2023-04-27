@@ -11,6 +11,7 @@ import Actualites from './actualites/actualites';
 import Inscription from './contact/inscription';
 import Acces from './club/acces';
 import Bureau from './club/bureau';
+import Login from './backend/login/login';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="ATT-ST-Antoine/competitions" element={<Competition />} />
         <Route path="ATT-ST-Antoine/inscription" element={<Inscription />} />
         <Route path="ATT-ST-Antoine/formulaire" element={<Contact />} />
+        <Route path="ATT-ST-Antoine/identification" element={<Login />} />
       </Routes>
       <Footer />
 
